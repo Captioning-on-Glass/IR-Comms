@@ -1,0 +1,7 @@
+{
+    "sketch": "ir-recv-secondary.ino",
+    "board": "arduino:avr:nano",
+    "configuration": "cpu=atmega328old",
+    "programmer": "arduino:avrisp",
+    "port": "/dev/ttyUSB0"
+}

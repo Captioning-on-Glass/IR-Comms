@@ -1,7 +1,0 @@
-{
-    "sketch": "ir-recv.ino",
-    "board": "TinyCircuits:samd:tinyzero",
-    "configuration": "BuildOption=normal",
-    "programmer": "AVR ISP",
-    "port": "/dev/ttyACM0"
-}
