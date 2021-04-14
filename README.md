@@ -11,7 +11,7 @@ You will need:
 - Wires and resistors as necessary to keep your hardware from shorting.
 
 The hardware should be set up to look something like this:
-![Fritzing Circuit Diagram](.docs/bb_setup.png)
+![Fritzing Circuit Diagram](./docs/bb_setup.png)
 
 ## Design
 This system works using a primary/secondary approach.
