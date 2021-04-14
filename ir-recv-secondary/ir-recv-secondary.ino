@@ -50,9 +50,14 @@ void loop()
          * since receiving has stopped after the end of the current received data packet.
          */
         IrReceiver.resume(); // Enable receiving of the next value
-        digitalWrite(OUTPUT_PIN, HIGH);
-        delay(60);
-    } else {
+        if (IrReceiver.decodedIRData.command == 0x3A)
+        {
+            digitalWrite(OUTPUT_PIN, HIGH);
+            delay(60);
+        }
+    }
+    else
+    {
         digitalWrite(OUTPUT_PIN, LOW);
     }
 }
