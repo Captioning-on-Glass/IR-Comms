@@ -26,9 +26,8 @@
         },
         {
             "name": "Arduino",
-            "compilerPath": "/home/quontas/Downloads/arduino-1.8.13/hardware/tools/avr/bin/avr-g++",
+            "compilerPath": "C:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr\\bin\\avr-g++",
             "compilerArgs": [
-                "-w",
                 "-std=gnu++11",
                 "-fpermissive",
                 "-fno-exceptions",
@@ -39,14 +38,14 @@
             ],
             "intelliSenseMode": "gcc-x64",
             "includePath": [
-                "/home/quontas/Downloads/arduino-1.8.13/hardware/arduino/avr/cores/arduino",
-                "/home/quontas/Downloads/arduino-1.8.13/hardware/arduino/avr/variants/mega",
-                "/home/quontas/Downloads/arduino-1.8.13/hardware/tools/avr/lib/gcc/avr/7.3.0/include",
-                "/home/quontas/Downloads/arduino-1.8.13/hardware/tools/avr/lib/gcc/avr/7.3.0/include-fixed",
-                "/home/quontas/Downloads/arduino-1.8.13/hardware/tools/avr/avr/include"
+                "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\cores\\arduino",
+                "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\variants\\mega",
+                "c:\\program files (x86)\\arduino\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include",
+                "c:\\program files (x86)\\arduino\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include-fixed",
+                "c:\\program files (x86)\\arduino\\hardware\\tools\\avr\\avr\\include"
             ],
             "forcedInclude": [
-                "/home/quontas/Downloads/arduino-1.8.13/hardware/arduino/avr/cores/arduino/Arduino.h"
+                "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\cores\\arduino\\Arduino.h"
             ],
             "cStandard": "c11",
             "cppStandard": "c++11",
@@ -552,7 +551,8 @@
                 "__cpp_init_captures=201304",
                 "__ATOMIC_ACQ_REL=4",
                 "__ATOMIC_RELEASE=3",
-                "__BUILTIN_AVR_FMUL=1"
+                "__BUILTIN_AVR_FMUL=1",
+                "USBCON"
             ]
         }
     ]

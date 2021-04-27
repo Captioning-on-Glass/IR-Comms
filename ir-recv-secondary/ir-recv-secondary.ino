@@ -5,7 +5,8 @@
  * board to indicate that it got something. 
  */
 #include <IRremote.h>
-#define IR_RECEIVE_PIN 3
+#define IR_RECEIVE_PIN A0
+#define IR_COMMAND 0x40
 #define OUTPUT_PIN 4
 
 void setup()
@@ -40,8 +41,9 @@ void loop()
         IrReceiver.printIRResultShort(&Serial);
         if (IrReceiver.decodedIRData.protocol == UNKNOWN)
         {
+            Serial.println(IrReceiver.decodedIRData.command);
             // We have an unknown protocol here, print more info
-            IrReceiver.printIRResultRawFormatted(&Serial, true);
+            // IrReceiver.printIRResultRawFormatted(&Serial, true);
         }
         Serial.println();
 
@@ -50,7 +52,7 @@ void loop()
          * since receiving has stopped after the end of the current received data packet.
          */
         IrReceiver.resume(); // Enable receiving of the next value
-        if (IrReceiver.decodedIRData.command == 0x3A)
+        if (IrReceiver.decodedIRData.command == IR_COMMAND)
         {
             digitalWrite(OUTPUT_PIN, HIGH);
             delay(60);

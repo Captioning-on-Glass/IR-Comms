@@ -1,7 +1,6 @@
 {
     "sketch": "ir-recv-secondary.ino",
-    "board": "arduino:avr:nano",
-    "configuration": "cpu=atmega328old",
+    "board": "arduino:avr:uno",
     "programmer": "arduino:avrisp",
-    "port": "/dev/ttyUSB0"
+    "port": "COM10"
 }
