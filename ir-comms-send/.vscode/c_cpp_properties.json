@@ -28,7 +28,6 @@
             "compilerArgs": [
                 "-mcpu=cortex-m0plus",
                 "-mthumb",
-                "-w",
                 "-std=gnu++11",
                 "-ffunction-sections",
                 "-fdata-sections",
@@ -515,7 +514,8 @@
                 "__QQ_IBIT__=0",
                 "__cpp_init_captures=201304",
                 "__ATOMIC_ACQ_REL=4",
-                "__ATOMIC_RELEASE=3"
+                "__ATOMIC_RELEASE=3",
+                "USBCON"
             ]
         }
     ]
