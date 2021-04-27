@@ -60,7 +60,7 @@ void loop()
         buffer.clear();
         Serial.flush();
     }
-    delay(15);
+    delay(5);
 }
 
 void printBuffer(JurorBuffer buffer) {

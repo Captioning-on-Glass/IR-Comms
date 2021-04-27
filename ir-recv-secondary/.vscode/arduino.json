@@ -2,5 +2,5 @@
     "sketch": "ir-recv-secondary.ino",
     "board": "arduino:avr:uno",
     "programmer": "arduino:avrisp",
-    "port": "COM6"
+    "port": "/dev/ttyUSB0"
 }
