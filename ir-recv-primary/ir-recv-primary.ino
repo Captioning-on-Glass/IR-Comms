@@ -58,9 +58,9 @@ void loop()
             Serial.println(buffer.mode());
         }
         buffer.clear();
+        Serial.flush();
     }
-    Serial.flush();
-    delay(60);
+    delay(15);
 }
 
 void printBuffer(JurorBuffer buffer) {

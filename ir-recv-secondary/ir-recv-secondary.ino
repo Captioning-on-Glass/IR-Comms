@@ -36,14 +36,15 @@ void loop()
      */
     if (IrReceiver.decode())
     {
-
+        
         // Print a short summary of received data
         IrReceiver.printIRResultShort(&Serial);
         if (IrReceiver.decodedIRData.protocol == UNKNOWN)
         {
+            Serial.print("Command = ");
             Serial.println(IrReceiver.decodedIRData.command);
             // We have an unknown protocol here, print more info
-            // IrReceiver.printIRResultRawFormatted(&Serial, true);
+            IrReceiver.printIRResultRawFormatted(&Serial, true);
         }
         Serial.println();
 
@@ -52,11 +53,11 @@ void loop()
          * since receiving has stopped after the end of the current received data packet.
          */
         IrReceiver.resume(); // Enable receiving of the next value
-        if (IrReceiver.decodedIRData.command == IR_COMMAND)
-        {
+        // if (IrReceiver.decodedIRData.command == IR_COMMAND)
+        // {
             digitalWrite(OUTPUT_PIN, HIGH);
-            delay(60);
-        }
+            delay(150);
+        // }
     }
     else
     {

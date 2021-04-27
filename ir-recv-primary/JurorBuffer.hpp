@@ -6,11 +6,12 @@
 
 class JurorBuffer {
     public:
-    static const size_t BUFFER_SIZE = 7;
-    uint16_t buf[BUFFER_SIZE] = {NO_SIGNAL, NO_SIGNAL, NO_SIGNAL, NO_SIGNAL, NO_SIGNAL};
+    static const size_t BUFFER_SIZE = 3;
+    uint16_t buf[BUFFER_SIZE];
     size_t index = 0;
 
     JurorBuffer() {
+        this->clear();
     }
 
     void add(uint16_t value) {

@@ -2,6 +2,6 @@
     "sketch": "ir-transmit.ino",
     "board": "TinyCircuits:samd:tinyzero",
     "programmer": "AVR ISP",
-    "port": "/dev/ttyACM0",
+    "port": "COM4",
     "configuration": "BuildOption=normal"
 }
