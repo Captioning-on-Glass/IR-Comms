@@ -2,31 +2,8 @@
     "version": 4,
     "configurations": [
         {
-            "name": "Linux",
-            "compilerPath": "/usr/bin/gcc",
-            "compilerArgs": [],
-            "intelliSenseMode": "linux-gcc-x64",
-            "includePath": [
-                "/home/quontas/Downloads/arduino-1.8.13/tools/**",
-                "/home/quontas/Arduino/libraries/**",
-                "/home/quontas/Downloads/arduino-1.8.13/libraries/**",
-                "/home/quontas/Downloads/arduino-1.8.13/hardware/tools/**",
-                "/home/quontas/Downloads/arduino-1.8.13/hardware/arduino/avr/**",
-                "/home/quontas/.arduino15/packages/TinyCircuits/hardware/samd/1.1.0/**"
-            ],
-            "forcedInclude": [
-                "/home/quontas/Downloads/arduino-1.8.13/hardware/arduino/avr/cores/arduino/Arduino.h",
-                "/home/quontas/.arduino15/packages/TinyCircuits/hardware/samd/1.1.0/cores/arduino/Arduino.h"
-            ],
-            "cStandard": "gnu17",
-            "cppStandard": "gnu++14",
-            "defines": [
-                "USBCON"
-            ]
-        },
-        {
             "name": "Arduino",
-            "compilerPath": "/home/quontas/Downloads/arduino-1.8.13/hardware/tools/avr/bin/avr-g++",
+            "compilerPath": "/home/quontas/Downloads/arduino-1.8.16/hardware/tools/avr/bin/avr-g++",
             "compilerArgs": [
                 "-std=gnu++11",
                 "-fpermissive",
@@ -38,20 +15,20 @@
             ],
             "intelliSenseMode": "gcc-x64",
             "includePath": [
-                "/home/quontas/Downloads/arduino-1.8.13/hardware/arduino/avr/cores/arduino",
-                "/home/quontas/Downloads/arduino-1.8.13/hardware/arduino/avr/variants/mega",
-                "/home/quontas/Downloads/arduino-1.8.13/hardware/tools/avr/lib/gcc/avr/7.3.0/include",
-                "/home/quontas/Downloads/arduino-1.8.13/hardware/tools/avr/lib/gcc/avr/7.3.0/include-fixed",
-                "/home/quontas/Downloads/arduino-1.8.13/hardware/tools/avr/avr/include"
+                "/home/quontas/Downloads/arduino-1.8.16/hardware/arduino/avr/cores/arduino",
+                "/home/quontas/Downloads/arduino-1.8.16/hardware/arduino/avr/variants/mega",
+                "/home/quontas/Downloads/arduino-1.8.16/hardware/tools/avr/lib/gcc/avr/7.3.0/include",
+                "/home/quontas/Downloads/arduino-1.8.16/hardware/tools/avr/lib/gcc/avr/7.3.0/include-fixed",
+                "/home/quontas/Downloads/arduino-1.8.16/hardware/tools/avr/avr/include"
             ],
             "forcedInclude": [
-                "/home/quontas/Downloads/arduino-1.8.13/hardware/arduino/avr/cores/arduino/Arduino.h"
+                "/home/quontas/Downloads/arduino-1.8.16/hardware/arduino/avr/cores/arduino/Arduino.h"
             ],
             "cStandard": "c11",
             "cppStandard": "c++11",
             "defines": [
                 "F_CPU=16000000L",
-                "ARDUINO=10813",
+                "ARDUINO=10816",
                 "ARDUINO_AVR_MEGA2560",
                 "ARDUINO_ARCH_AVR",
                 "__DBL_MIN_EXP__=(-125)",

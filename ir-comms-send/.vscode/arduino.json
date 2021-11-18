@@ -1,7 +1,7 @@
 {
     "sketch": "ir-transmit.ino",
+    "configuration": "BuildOption=normal",
     "board": "TinyCircuits:samd:tinyzero",
-    "programmer": "AVR ISP",
-    "port": "COM4",
-    "configuration": "BuildOption=normal"
+    "programmer": "TinyCircuits:atmel_ice",
+    "port": "/dev/ttyACM0"
 }

@@ -1,4 +1,5 @@
 #include "JurorBuffer.hpp"
+
 #define JUROR_A_SECONDARY_PIN 2
 #define JUROR_B_SECONDARY_PIN 3
 #define JUROR_C_SECONDARY_PIN 4
@@ -52,15 +53,12 @@ void loop()
         // Serial.println("X");
     }
     if (buffer.is_full()) {
-        if (buffer.mode() == NO_SIGNAL) {
-            Serial.println("X");
-        } else {
-            Serial.println(buffer.mode());
-        }
+        // printBuffer(buffer);
+        Serial.println(buffer.mode());
         buffer.clear();
         Serial.flush();
     }
-    delay(5);
+    delay(10);
 }
 
 void printBuffer(JurorBuffer buffer) {

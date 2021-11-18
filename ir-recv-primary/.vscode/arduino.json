@@ -1,7 +1,7 @@
 {
-    "port": "COM3",
+    "sketch": "ir-recv-primary.ino",
     "configuration": "cpu=atmega2560",
     "board": "arduino:avr:mega",
     "programmer": "arduino:avrisp",
-    "sketch": "ir-recv-primary.ino"
+    "port": "/dev/ttyUSB0"
 }

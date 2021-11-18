@@ -7,7 +7,7 @@
 #include <IRremote.h>
 #define IR_RECEIVE_PIN A0
 #define IR_COMMAND 0x40
-#define OUTPUT_PIN 4
+#define OUTPUT_PIN A1
 
 void setup()
 {
@@ -29,7 +29,7 @@ void loop()
     /*
      * Check if received data is available and if yes, try to decode it.
      * Decoded result is in the IrReceiver.decodedIRData structure.
-     *
+     *  
      * E.g. command is in IrReceiver.decodedIRData.command
      * address is in command is in IrReceiver.decodedIRData.address
      * and up to 32 bit raw data in IrReceiver.decodedIRData.decodedRawData
