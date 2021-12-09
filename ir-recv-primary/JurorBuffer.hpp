@@ -7,7 +7,7 @@
 class JurorBuffer
 {
 public:
-    static const size_t BUFFER_SIZE = 33;
+    static const size_t BUFFER_SIZE = 15;
     uint16_t buf[BUFFER_SIZE];
     size_t index = 0;
 
